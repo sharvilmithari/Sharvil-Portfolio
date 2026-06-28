@@ -9,7 +9,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Sharvil Mithari — Frontend Developer & AI Enthusiast",
+  title: "Sharvil Mithari - Portfolio",
   description:
     "Computer Engineering student crafting modern web apps, AI-powered tools and intuitive digital experiences using Next.js, Python and Generative AI.",
   keywords: [
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Sharvil Mithari" }],
   openGraph: {
-    title: "Sharvil Mithari — Frontend Developer & AI Enthusiast",
+    title: "Sharvil Mithari - Portfolio",
     description:
       "Computer Engineering student crafting modern web apps, AI-powered tools and intuitive digital experiences.",
     type: "website",
