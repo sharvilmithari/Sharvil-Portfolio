@@ -74,7 +74,7 @@ const projects = [
 
 const projectVariants: Variants = {
   hidden: { opacity: 0, y: 60 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" as const } },
 };
 
 export default function Projects() {
@@ -125,7 +125,7 @@ export default function Projects() {
                       <span className={styles.windowLang}>{project.language}</span>
                     </div>
                     <pre className={styles.codeBlock}>
-                      <code>{project.code}</code>
+                      <code>{(project as Record<string, unknown>).code as string}</code>
                     </pre>
                   </div>
                 )}
