@@ -1,0 +1,253 @@
+.projects {
+  padding: var(--section-padding);
+}
+
+.projectList {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  margin-top: 80px;
+}
+
+.projectCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.projectCard.reversed {
+  direction: rtl;
+}
+
+.projectCard.reversed > * {
+  direction: ltr;
+}
+
+/* Code Preview */
+.codePreview {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.codeWindow {
+  background: rgba(13, 14, 22, 0.9);
+  border: 1px solid var(--bg-card-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.imageContainer {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--bg-card-border);
+  background: rgba(13, 14, 22, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.windowHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--bg-card-border);
+}
+
+.windowDots {
+  display: flex;
+  gap: 6px;
+}
+
+.dotRed,
+.dotYellow,
+.dotGreen {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dotRed {
+  background: #ff5f57;
+}
+
+.dotYellow {
+  background: #ffbd2e;
+}
+
+.dotGreen {
+  background: #28c840;
+}
+
+.windowLang {
+  font-size: var(--font-size-xs);
+  color: var(--text-tertiary);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.codeBlock {
+  padding: 24px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: rgba(200, 210, 230, 0.85);
+  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+  overflow-x: auto;
+}
+
+.codeBlock code {
+  font-family: inherit;
+}
+
+.codeTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Project Info */
+.projectInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.projectNumber {
+  font-size: var(--font-size-xs);
+  color: var(--text-tertiary);
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.projectTitle {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.projectSubtitle {
+  font-size: var(--font-size-base);
+  color: var(--text-tertiary);
+  margin-bottom: 4px;
+}
+
+.projectDesc {
+  font-size: var(--font-size-base);
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.problemSolution {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.label {
+  font-size: var(--font-size-xs);
+  color: var(--text-tertiary);
+  letter-spacing: 2px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.labelText {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.featureList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+.projectActions {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.actionPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: var(--text-primary);
+  color: var(--bg-primary);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  transition: all var(--transition-base);
+}
+
+.actionPrimary:hover {
+  background: rgba(240, 240, 245, 0.9);
+  transform: translateY(-2px);
+}
+
+.actionSecondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: color var(--transition-fast);
+}
+
+.actionSecondary:hover {
+  color: var(--text-primary);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .projectCard,
+  .projectCard.reversed {
+    grid-template-columns: 1fr;
+    direction: ltr;
+    gap: 40px;
+  }
+
+  .projectList {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projectTitle {
+    font-size: var(--font-size-2xl);
+  }
+
+  .projectActions {
+    flex-direction: column;
+  }
+
+  .actionPrimary {
+    justify-content: center;
+  }
+}
