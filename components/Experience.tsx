@@ -5,6 +5,19 @@ import styles from "./Experience.module.css";
 
 const experiences = [
   {
+    role: "Web Development Intern",
+    company: "InAmigos Foundation",
+    period: "July 2026 | Remote",
+    description:
+      "Developed and enhanced the official website of InAmigos Foundation, a registered non-profit organization.",
+    highlights: [
+      "Built responsive and accessible web pages using HTML, CSS, and JavaScript",
+      "Designed and implemented key sections including Home, About Us, Vision & Mission, Projects, Gallery, Join Us, and Donation",
+      "Improved website UI/UX by creating a clean, mobile-friendly, and user-focused interface",
+      "Collaborated with the team to deliver updates within project deadlines and ensure a smooth user experience",
+    ],
+  },
+  {
     role: "Frontend Developer",
     company: "Self-Employed",
     period: "Jan 2026 — Apr 2026 | Pune",
