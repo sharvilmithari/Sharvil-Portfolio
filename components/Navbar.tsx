@@ -45,9 +45,10 @@ export default function Navbar() {
         {/* Right Actions */}
         <div className={styles.navActions}>
           <a
-            href="/resume.docx"
+            href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
+            download="Sharvil_Mithari_Resume.pdf"
             className={styles.resumeBtn}
           >
             Resume <span className={styles.arrowIcon}>↗</span>
@@ -85,9 +86,10 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="/resume.docx"
+              href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
+              download="Sharvil_Mithari_Resume.pdf"
               className={styles.mobileResume}
             >
               Resume ↗

@@ -1,9 +1,4 @@
 {
-<<<<<<< HEAD
-  "dependencies": {
-    "framer-motion": "^12.42.0",
-    "lucide-react": "^1.21.0"
-=======
   "name": "sharvil",
   "version": "0.1.0",
   "private": true,
@@ -16,6 +11,7 @@
   "dependencies": {
     "framer-motion": "^12.42.0",
     "hls.js": "^1.6.16",
+    "lucide-react": "^1.21.0",
     "next": "16.2.9",
     "react": "19.2.4",
     "react-dom": "19.2.4"
@@ -27,6 +23,5 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.9",
     "typescript": "^5"
->>>>>>> 91fa5462352176ac4c6d4a0bf9cf185828dbf324
   }
 }
