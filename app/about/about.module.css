@@ -1,0 +1,17 @@
+.aboutPage {
+  padding: 160px 0 var(--section-padding) 0;
+  min-height: calc(100vh - 120px);
+}
+
+.passage {
+  font-size: var(--font-size-xl);
+  color: var(--text-secondary);
+  line-height: 1.8;
+  max-width: 800px;
+  margin-top: 40px;
+}
+
+.passage strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
