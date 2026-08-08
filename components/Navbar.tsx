@@ -24,12 +24,12 @@ export default function Navbar() {
   }, []);
 
   return (
-    <motion.nav
+  <motion.nav
       className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-    >
+  >
       <div className={`container ${styles.navContainer}`}>
 
 
