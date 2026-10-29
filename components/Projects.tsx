@@ -7,10 +7,10 @@ const projects = [
   {
     number: "01",
     title: "SpendWise",
-    subtitle: "Personal Expense Tracker",
+    subtitle: "Personal Finance Management System ",
     language: "PYTHON",
     description:
-      "A full-stack personal finance management application with multi-page navigation, transaction CRUD, and an analytics dashboard for spending pattern visualization.",
+      "A complete financial management platform built for students and professionals in India — intelligent, automated, and collaborative.",
     problem:
       "Most expense apps feel cluttered, ad-heavy and break user privacy with cloud-only flows.",
     solution:
@@ -70,6 +70,27 @@ const projects = [
     imageUrl: "/triagepilot.png",
     githubUrl: "https://github.com/sharvilmithari/TriagePilot",
   },
+  {
+    number: "04",
+    title: "CheckMyCode",
+    subtitle: "Project Security & Deployment Readiness Platform",
+    language: "PYTHON / TS",
+    description:
+      "Find the risks. Fix them before you ship. CheckMyCode is a developer-focused platform designed to help identify potential security risks and deployment-related issues in software projects before they go live. Developers can upload their project files, scan them for potential problems, and review findings to make more informed decisions before deployment.",
+    problem:
+      "Developers may overlook security vulnerabilities, exposed secrets, configuration mistakes, and other deployment risks while building software. Identifying these issues manually can be time-consuming, especially before a release. Missing critical checks can lead to security problems, unexpected failures, and deployment complications.",
+    solution:
+      "CheckMyCode aims to simplify pre-deployment checks by providing a centralized platform where developers can submit project files and analyze potential risks. It presents scan results to help developers understand possible issues and take corrective action before deploying their applications.",
+    features: [
+      "Project Scanning: Upload project files for analysis",
+      "Risk Detection: Identify potential security and configuration issues supported by the scanner",
+      "Scan Results: Review findings through a dedicated results interface",
+      "Downloadable Reports: Access scan reports, if enabled in the deployed version",
+    ],
+    techTags: ["Python", "Security", "Static Analysis", "REST API", "Developer Tools"],
+    imageUrl: "/checkmycode.png",
+    githubUrl: "https://github.com/sharvilmithari/CheckMyCode",
+  },
 ];
 
 const projectVariants: Variants = {
@@ -108,8 +129,8 @@ export default function Projects() {
               <div className={styles.codePreview}>
                 {project.imageUrl ? (
                   <div className={styles.imageContainer}>
-                    <img 
-                      src={project.imageUrl} 
+                    <img
+                      src={project.imageUrl}
                       alt={project.title}
                       className={styles.projectImage}
                     />

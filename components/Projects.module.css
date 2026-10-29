@@ -179,10 +179,15 @@
 
 .featureItem {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
   font-size: var(--font-size-sm);
   color: var(--text-secondary);
+}
+
+.featureItem svg {
+  flex-shrink: 0;
+  margin-top: 3px;
 }
 
 .projectActions {
